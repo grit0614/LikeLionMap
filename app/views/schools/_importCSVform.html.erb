@@ -1,0 +1,11 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Import data</h3>
+  </div>
+  <div class="panel-body">
+    <%= form_tag import_schools_path, multipart: true do %>
+      <%= file_field_tag :file %>
+      <%= submit_tag "Import" %>
+    <% end %>
+  </div>
+</div>

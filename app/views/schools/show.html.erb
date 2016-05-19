@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @school.name %>
+</p>
+
+<p>
+  <strong>Num:</strong>
+  <%= @school.num %>
+</p>
+
+<p>
+  <strong>Lat:</strong>
+  <%= @school.lat %>
+</p>
+
+<p>
+  <strong>Lng:</strong>
+  <%= @school.lng %>
+</p>
+
+<br><br><br><br><br>
+
+<div id="map"></div>
+
+<%= render 'showOne' %>
+<%= link_to 'Edit', edit_school_path(@school) %> |
+<%= link_to 'Back', schools_path %>
+
